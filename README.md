@@ -44,3 +44,47 @@ You can also view the evolution of the code from the function-based prototype to
 | 🧑‍💻 Week 4        | client.py, server.py | Adds socket-based text (client/server)    |
 | 🗃 SQLite Added    | sqlserver.py, SQL.py | Server reads/writes to vending_machine.db  |
 | 🖱 GUI Added       | gui.py               | GUI-based client using Tkinter               |
+
+# How to Run
+
+Required Files:
+- gui.py
+- sqlserver.py
+- SQL.py
+- vending_machine.db
+
+These 4 files must be in the same folder.
+
+Setup Instructions:
+- Ensure Python is installed
+- The sqlserver.py file and the gui.py file need to be in the same directory as the SQL.py file as it contains necessary functions used by sqlserver.py
+- Open two separate cmd windows or terminal windows
+- On the first window, navigate to the directory ‘sqlserver.py’ is in
+- Run the prompt:
+             python sqlserver.py
+- On the second window, navigate to where ‘gui.py’ is in
+- Run the prompt: 
+       python gui.py
+
+**sqlserver.py should be run first and then gui.py**
+
+# Data Handling
+Old versions:
+  Uses inventory.txt and transactions.txt for storage and logging
+Final version:
+  All inventory and transactions are stored in vending_machine.db (SQLite database)
+  SQL operations are handled by functions in SQL.py
+
+
+# Testing Older Versions
+
+To explore development progress:
+Uncomment the line '#menu' and run CW2_week_6_7.py to see function-based vending logic
+Run class.py to test class-based design
+Run client.py and server.py in two terminals to try the basic socket model (text-based, no database)
+
+*These versions use inventory.txt and transactions.txt, not the .db file.*
+ 
+ 
+
+
